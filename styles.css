@@ -1,20 +1,46 @@
 /*
-first we put the photo in css instead of html
+first we put the photo in css instead of html (later I will change the photo for a link)
 and we fix the photo size
 Center the text button.
 Style the button according to the design.
 Google Fonts
+Add the underline to the title using <span> and a class.
  */
 
-body {
-    color: white;
-    background-image: url(images/david-monje-jtvfXZ2n38Q-unsplash.jpg);
+#hero {
+    color: #6F86B3ff;
+    /* en coolors.co te saca paletas de colores de imágenes, links, etc...*/
+    background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmt4aXY2cjBwNGo0ZHZwazAzazd5YW1rcjFmajhtMXNicmJ4c3RueCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iicDrNGWxHmDrIni6j/giphy.gif);
+    /* en esta web hay imágenes con movimiento*/
     background-size: cover;
     margin: 0 auto;
     text-align: center;
     font-family: "orbitron", serif;
     /*así aplicamos la fuente orbitron al cuerpo */
+    padding: 50px;
 }
+
+#title {
+    text-shadow: 0px 0px 4px black;
+    /* el primer valor, cuanto se dezplaza la sombra hacia la derecha (si pones -, hacia la izquierda)
+       el segundo valor,...................................abajo (si pones -, hacia arriba)
+       tercer valor, difuminado.
+       cuarto valor, color.
+       */
+}
+
+.underline {
+    border-bottom: 4px solid white;
+
+}
+
+/* cuando se usa id en lugar de class es porque ese elemento solo se usa una vez.
+    cuando se usa id, se le llama, desde css con # en lugar de . */
+#main-logo {
+    width: 100px;
+    margin: 0 auto;
+}
+
 
 .apply {
     background-color: white;
@@ -23,4 +49,14 @@ body {
     /* así aplicamos la fuente "orbitron de google al botón, 
     que no se modifica cuando cambias la letra del body*/
     font-family: inherit;
+    color: inherit;
+    font-weight: bold;
+}
+
+body {
+    background-color: white;
+    color: #6F86B3ff;
+    text-align: center;
+    font-family: "orbitron", serif;
+    margin: 0px;
 }
