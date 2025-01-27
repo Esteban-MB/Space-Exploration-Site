@@ -1,0 +1,26 @@
+/*
+first we put the photo in css instead of html
+and we fix the photo size
+Center the text button.
+Style the button according to the design.
+Google Fonts
+ */
+
+body {
+    color: white;
+    background-image: url(images/david-monje-jtvfXZ2n38Q-unsplash.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "orbitron", serif;
+    /*así aplicamos la fuente orbitron al cuerpo */
+}
+
+.apply {
+    background-color: white;
+    border: none;
+    padding: 6px 12px;
+    /* así aplicamos la fuente "orbitron de google al botón, 
+    que no se modifica cuando cambias la letra del body*/
+    font-family: inherit;
+}
